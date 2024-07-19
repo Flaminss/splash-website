@@ -27,7 +27,7 @@ export const Leaderboard = async () => {
                 <p className="reward">Reward</p>
 
                 <a href="#" className="leaderboard__card--btn">
-                  $50
+                  $150
                 </a>
               </div>
             </div>
@@ -44,7 +44,7 @@ export const Leaderboard = async () => {
                 <p className="reward">Reward</p>
 
                 <a href="#" className="leaderboard__card--btn">
-                  $50
+                  $75
                 </a>
               </div>
             </div>
@@ -94,8 +94,9 @@ export const Leaderboard = async () => {
                     <p className="challengers__num">
                       {formatter.format(challenger?.wagerAmount)}
                     </p>
-                    <p className="challengers__prize">$500</p>
+                    <p className="challengers__prize">$10</p>
                   </div>
+                  
                 ))}
               </div>
             </div>
