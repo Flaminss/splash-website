@@ -22,7 +22,7 @@ export default function Bonuses() {
                 <h3>Rewards</h3>
                 <p>DAILY FREE CASES + RAKEBACK</p>
                 <p>5% DEPOSIT BONUS</p>
-                <p>COMPETE IN MONTHLY RACE</p>
+                <p>DAILY DEPOSIT GIVEAWAYS</p>
               </div>
               <p className="use__code">Use Code</p>
               <div className="card__btn">
@@ -31,11 +31,11 @@ export default function Bonuses() {
             </div>
             <div className="card card-bottom">
               <div className="title">
-                <h3>csgo roll</h3>
+                <h3>packdraw</h3>
               </div>
               <div className="rewards">
                 <h3>Rewards</h3>
-                <p>DAILY FREE CASES + RAKEBACK</p>
+                <p>DAILY FREE CASES</p>
                 <p>5% DEPOSIT BONUS</p>
                 <p>COMPETE IN MONTHLY RACE</p>
               </div>
@@ -46,7 +46,7 @@ export default function Bonuses() {
             </div>
             <div className="card card-top">
               <div className="title">
-                <h3>csgo roll</h3>
+                <h3>clash</h3>
               </div>
               <div className="rewards">
                 <h3>Rewards</h3>

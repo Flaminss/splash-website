@@ -4,11 +4,11 @@ export default function Card() {
   return (
     <div className="card">
       <div className="title">
-        <h3>csgo roll</h3>
+        <h3>packdraw</h3>
       </div>
       <div className="rewards">
         <h3>Rewards</h3>
-        <p>DAILY FREE CASES + RAKEBACK</p>
+        <p>DAILY FREE CASES</p>
         <p>5% DEPOSIT BONUS</p>
         <p>COMPETE IN MONTHLY RACE</p>
       </div>

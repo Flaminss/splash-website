@@ -10,16 +10,16 @@ export default function Giveway() {
             <p className="total__amount">Total amount given away</p>
             <div className="giveway__amount">
               <div className="giveway__amount--inner">
+                <p className="num"></p>
+                <p className="num"></p>
                 <p className="num">$</p>
-                <p className="num">1</p>
-                <span className="comma num">,</span>
                 <p className="num">2</p>
-                <p className="num">5</p>
-                <p className="num">0</p>
                 <span className="comma num">,</span>
+                <p className="num">7</p>
+                <p className="num">3</p>
                 <p className="num">0</p>
-                <p className="num">0</p>
-                <p className="num">0</p>
+                <p className="num"></p>
+                <p className="num"></p>
               </div>
              
             </div>
