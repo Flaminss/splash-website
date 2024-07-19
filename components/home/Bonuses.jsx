@@ -26,7 +26,7 @@ export default function Bonuses() {
               </div>
               <p className="use__code">Use Code</p>
               <div className="card__btn">
-                <button className="btn__card">Splash</button>
+                <button className="btn__card">SplashCS</button>
               </div>
             </div>
             <div className="card card-bottom">
@@ -56,7 +56,7 @@ export default function Bonuses() {
               </div>
               <p className="use__code">Use Code</p>
               <div className="card__btn">
-                <button className="btn__card">Splash</button>
+                <button className="btn__card">SplashCS</button>
               </div>
             </div>
           </div>
