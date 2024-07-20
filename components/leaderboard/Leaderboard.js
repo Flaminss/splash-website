@@ -1,13 +1,28 @@
+import { useEffect, useState } from "react";
 import { LeaderboardRemainingTime } from "./LeaderboardRemainingTime";
 import { formatter } from "@/lib/utils";
-
 import { getLeaderboard } from "@/actions/get-leaderboard";
 
-export const Leaderboard = async () => {
-  const data = await getLeaderboard(
-    new Date().getUTCMonth() + 1,
-    new Date().getUTCFullYear()
-  );
+export const Leaderboard = () => {
+  const [data, setData] = useState(null);
+
+  const fetchLeaderboard = async () => {
+    const leaderboardData = await getLeaderboard(
+      new Date().getUTCMonth() + 1,
+      new Date().getUTCFullYear()
+    );
+    setData(leaderboardData);
+  };
+
+  useEffect(() => {
+    fetchLeaderboard();
+    const interval = setInterval(() => {
+      fetchLeaderboard();
+    }, 60000); // 60000 ms = 1 minute
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       {/* Leaderboard Card Area Start */}
@@ -96,7 +111,6 @@ export const Leaderboard = async () => {
                     </p>
                     <p className="challengers__prize">$10</p>
                   </div>
-                  
                 ))}
               </div>
             </div>
