@@ -29,8 +29,8 @@
 
 /* Hover effect for main menu links */
 .mainmenu li a:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
-  color: #ffffff; /* Text color on hover */
+  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
+  color: #ffeb3b; /* Text color on hover */
   padding: 0.5rem 1rem; /* Optional padding for hover effect */
   border-radius: 5px; /* Optional border radius for hover effect */
 }
@@ -55,8 +55,8 @@
 
 /* Hover effect for register button */
 .btn__primary:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
-  color: #ffffff; /* Text color on hover */
+  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
+  color: #ffeb3b; /* Text color on hover */
 }
 
 .menubar {
@@ -106,8 +106,8 @@
 
 /* Hover effect for mobile menu links */
 .mobilemenu__list li a:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
-  color: #ffffff; /* Text color on hover */
+  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
+  color: #ffeb3b; /* Text color on hover */
   padding: 0.5rem 1rem; /* Optional padding for hover effect */
   border-radius: 5px; /* Optional border radius for hover effect */
 }
