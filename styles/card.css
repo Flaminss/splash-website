@@ -1,3 +1,16 @@
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .bonuses__area {
   padding: 4rem 0;
 }
@@ -50,6 +63,13 @@
   text-transform: uppercase;
   padding: 6rem;
 }
+.card .title img.title__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: float 3s ease-in-out infinite; /* Apply the float animation */
+}
 .card .rewards {
   background-image: url("/images/rewards.png");
   background-repeat: no-repeat;
@@ -93,6 +113,11 @@
   color: #fff;
   padding: 2.5rem;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s; /* Smooth transition */
+}
+.btn__card:hover {
+  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
+  color: #ffeb3b; /* Text color on hover */
 }
 
 /* responsive  */
