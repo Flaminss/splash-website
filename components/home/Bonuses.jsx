@@ -14,7 +14,7 @@ export default function Bonuses() {
 
         <div className="card__area">
           <div className="cards bonuses">
-            <div className="card card-packdraw">
+            <div className="card">
               <div className="title title-packdraw">
                 <img src="/images/packdraw.png" alt="Packdraw" className="title__img" />
               </div>
@@ -29,7 +29,7 @@ export default function Bonuses() {
                 <button className="btn__card">Splash</button>
               </div>
             </div>
-            <div className="card card-csgo-roll">
+            <div className="card">
               <div className="title title-csgo-roll">
                 <img src="/images/csgo-roll.png" alt="CSGO Roll" className="title__img" />
               </div>
@@ -44,7 +44,7 @@ export default function Bonuses() {
                 <button className="btn__card">SplashCS</button>
               </div>
             </div>
-            <div className="card card-clash">
+            <div className="card">
               <div className="title title-clash">
                 <img src="/images/clash.png" alt="Clash" className="title__img" />
               </div>

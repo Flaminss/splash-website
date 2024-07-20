@@ -41,6 +41,7 @@
 }
 
 .card {
+  background-image: url("/images/card-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -51,24 +52,6 @@
   max-width: 35rem;
 }
 
-.card-packdraw,
-.card-csgo-roll,
-.card-clash {
-  background-image: url("/images/card-bg.png");
-}
-
-.card-packdraw {
-  background-size: 200%; /* 100% bigger */
-}
-
-.card-csgo-roll {
-  background-size: 200%; /* 100% bigger */
-}
-
-.card-clash {
-  background-size: 250%; /* 150% bigger */
-}
-
 .card .title {
   background-image: url("/images/card-title.png");
   background-repeat: no-repeat;
@@ -77,6 +60,18 @@
   text-align: center;
   display: inline-block;
   margin-top: 4rem;
+}
+
+.title-packdraw .card .title {
+  background-size: 200%; /* 100% bigger */
+}
+
+.title-csgo-roll .card .title {
+  background-size: 200%; /* 100% bigger */
+}
+
+.title-clash .card .title {
+  background-size: 250%; /* 150% bigger */
 }
 
 .card .title img.title__img {
