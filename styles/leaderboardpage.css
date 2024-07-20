@@ -208,6 +208,10 @@
 .challengers__item p:nth-child(3) {
   margin-left: auto;
   margin-right: 2rem;
+  text-align: center; /* Added */
+}
+.challengers__item .challengers__num {
+  text-align: center; /* Added */
 }
 .leaderboard__area .container {
   overflow-x: auto;

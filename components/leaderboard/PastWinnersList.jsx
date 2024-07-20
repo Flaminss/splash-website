@@ -45,6 +45,9 @@ export const PastWinnersList = () => {
     setShowWinnersModal(!showWinnersModal);
   };
 
+  // Example prizes for the first 10 places
+  const prizes = ["$150", "$75", "$50", "$25", "$15", "$10", "$10", "$5", "$5", "$5"];
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -93,6 +96,7 @@ export const PastWinnersList = () => {
           setYear={setYear}
           loading={loading}
           setLoading={setLoading}
+          prizes={prizes} // Pass the prizes array
         />
       )}
     </>

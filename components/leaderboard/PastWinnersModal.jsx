@@ -1,6 +1,5 @@
 import { IoIosClose } from "react-icons/io";
 import "../../styles/pastWinnersModal.css";
-import { useEffect, useState } from "react";
 import { renderMonth } from "@/lib/utils/render-month";
 import { formatter } from "@/lib/utils";
 
@@ -13,6 +12,7 @@ export default function PastWinnersModal({
   setYear,
   month,
   year,
+  prizes, // Add prizes as a prop
 }) {
   const hndleModalClose = () => {
     setShowWinnersModal(!showWinnersModal);
@@ -74,7 +74,7 @@ export default function PastWinnersModal({
                     <p className="item__wagered">
                       {formatter.format(item.wagerAmount)}
                     </p>
-                    <p className="item__prize">$500</p>
+                    <p className="item__prize">{prizes[index] || '$500'}</p> {/* Display the corresponding prize */}
                   </div>
                 ))}
 
@@ -86,12 +86,6 @@ export default function PastWinnersModal({
                 >
                   Previous Page
                 </button>
-                {/* <div className="pagination__num">
-                  <button className="pagination__num--btn">1</button>
-                  <button className="pagination__num--btn">2</button>
-                  <button className="pagination__num--btn">3</button>
-                  <button className="pagination__num--btn">4</button>
-                </div> */}
                 <button
                   className="btn__pagination"
                   onClick={handleNextButtonClick}
