@@ -8,6 +8,15 @@ import { getLeaderboard } from "@/actions/get-leaderboard";
 
 const Leaderboard = () => {
   const [data, setData] = useState(null);
+  const defaultPrizes = {
+    4: "$25",
+    5: "$15",
+    6: "$10",
+    7: "$10",
+    8: "$5",
+    9: "$5",
+    10: "$5"
+  };
 
   const fetchLeaderboard = async () => {
     const leaderboardData = await getLeaderboard(
@@ -110,9 +119,10 @@ const Leaderboard = () => {
                     <p className="sl">{index + 4}</p>
                     <p className="name">{challenger?.username}</p>
                     <p className="challengers__num">
+                      <span>$</span>
                       {formatter.format(challenger?.wagerAmount)}
                     </p>
-                    <p className="challengers__prize">$10</p>
+                    <p className="challengers__prize">{defaultPrizes[index + 4]}</p>
                   </div>
                 ))}
               </div>
