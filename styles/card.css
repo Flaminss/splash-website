@@ -14,28 +14,32 @@
 .bonuses__area {
   padding: 4rem 0;
 }
+
 .bonuses__img {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 4rem;
 }
+
 .bonuses__img .small {
   height: 22rem;
   width: 22rem;
 }
+
 .bonuses__img .large {
   height: 30rem;
   width: 30rem;
 }
 
-/* card css */
+/* Card CSS */
 .cards {
   display: flex;
   justify-content: space-around;
   gap: 4rem;
   flex-wrap: wrap;
 }
+
 .card {
   background-image: url("/images/card-bg.png");
   background-repeat: no-repeat;
@@ -47,6 +51,7 @@
   margin-bottom: -15rem;
   max-width: 35rem;
 }
+
 .card .title {
   background-image: url("/images/card-title.png");
   background-repeat: no-repeat;
@@ -56,20 +61,15 @@
   display: inline-block;
   margin-top: 4rem;
 }
-.card .title h3 {
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 6rem;
-}
+
 .card .title img.title__img {
-  max-width: 100%;
+  max-width: 50%; /* Make images 50% smaller */
   height: auto;
   display: block;
   margin: 0 auto;
   animation: float 3s ease-in-out infinite; /* Apply the float animation */
 }
+
 .card .rewards {
   background-image: url("/images/rewards.png");
   background-repeat: no-repeat;
@@ -79,17 +79,20 @@
   text-transform: uppercase;
   padding: 2rem;
 }
+
 .card .rewards h3 {
   font-size: 2.4rem;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1rem;
 }
+
 .card .rewards p {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
 .card .use__code {
   font-size: 1.7rem;
   font-weight: bold;
@@ -97,6 +100,7 @@
   padding: 1rem;
   text-transform: uppercase;
 }
+
 .card__btn {
   background-image: url("/images/card-btn.png");
   background-repeat: no-repeat;
@@ -104,6 +108,7 @@
   background-position: center;
   margin-bottom: 13rem;
 }
+
 .btn__card {
   background-color: transparent;
   border: none;
@@ -115,12 +120,13 @@
   cursor: pointer;
   transition: background 0.3s, color 0.3s; /* Smooth transition */
 }
+
 .btn__card:hover {
   background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
   color: #ffeb3b; /* Text color on hover */
 }
 
-/* responsive  */
+/* Responsive  */
 
 @media screen and (max-width: 900px) {
   .bonuses__img .small {
@@ -132,6 +138,7 @@
     height: 20rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .bonuses__img .small {
     width: 14rem;
@@ -142,6 +149,7 @@
     height: 16rem;
   }
 }
+
 @media screen and (max-width: 500px) {
   .bonuses__img .small {
     width: 12rem;
