@@ -9,14 +9,13 @@ export default function Hero({ content, img }) {
         {content && (
           <div className="hero__content">
             <div className="hero__btn">
-              <a href="https://splashrewards.net/bonuses" className="btn btn__primary">
+              <a href="https://splashrewards.net/bonuses" className="btn btn-secondary">
                 Bonuses
               </a>
-              <a href="https://splashrewards.net/leaderboard" className="btn btn__primary">
+              <a href="https://splashrewards.net/leaderboard" className="btn btn-secondary">
                 Leaderboard
               </a>
             </div>
-
             <div className="hero__play--btn">
               <div className="hero__play--btn--inner">
                 <FaPlay className="play" />

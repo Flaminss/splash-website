@@ -75,7 +75,12 @@
 }
 
 .btn__primary:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background on hover */
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-tertiary) 0%,
+    var(--color-dark-secondary) 100%
+  ); /* Keep the background color the same on hover */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
@@ -128,4 +133,23 @@
   font-size: 3rem;
   color: #fff;
   cursor: pointer;
+}
+
+/* CSS for Bonuses and Leaderboard buttons */
+.btn-secondary {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-secondary); /* Assuming you have a secondary color defined */
+  padding: 0.8rem 4rem;
+  border-radius: 0.9rem;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-secondary:hover {
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translateY(-3px); /* Slight lift on hover */
 }
