@@ -11,7 +11,7 @@
   height: 100%;
 }
 .hero__content {
-  margin-top: 45rem;
+  margin-top: 60rem; /* Adjusted to move the buttons down */
 }
 .hero__img {
   width: 100vw;
@@ -22,6 +22,10 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+.hero__btn a {
+  padding: 1rem 3rem; /* Increased padding for bigger buttons */
+  font-size: 1.5rem; /* Increased font size for bigger buttons */
 }
 .hero__play--btn {
   margin-top: 4rem;
@@ -48,26 +52,26 @@
 /* responsive */
 @media screen and (max-width: 1480px) {
   .hero__content {
-    margin-top: 42rem;
+    margin-top: 55rem; /* Adjusted to move the buttons down for smaller screens */
   }
 }
 @media screen and (max-width: 1300px) {
   .hero__content {
-    margin-top: 36rem;
+    margin-top: 50rem; /* Adjusted to move the buttons down for smaller screens */
   }
 }
 @media screen and (max-width: 1140px) {
   .hero__content {
-    margin-top: 32rem;
+    margin-top: 45rem; /* Adjusted to move the buttons down for smaller screens */
   }
 }
 @media screen and (max-width: 1000px) {
   .hero__content {
-    margin-top: 25rem;
+    margin-top: 40rem; /* Adjusted to move the buttons down for smaller screens */
   }
 }
 @media screen and (max-width: 700px) {
   .hero__content {
-    margin-top: 18rem;
+    margin-top: 35rem; /* Adjusted to move the buttons down for smaller screens */
   }
 }
