@@ -1,13 +1,15 @@
+// app/leaderboard/page.js
+
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import Hero from "@/components/common/Hero";
-import { Leaderboard } from "@/components/leaderboard/Leaderboard";
 import { Suspense } from "react";
 import "../../styles/leaderboardpage.css";
 
+import Leaderboard from "@/components/leaderboard/Leaderboard";
 import { PastWinnersList } from "@/components/leaderboard/PastWinnersList";
 
-export default function page() {
+export default function Page() {
   return (
     <>
       <Header />

@@ -1,9 +1,12 @@
+// components/leaderboard/Leaderboard.js
+"use client";
+
 import { useEffect, useState } from "react";
 import { LeaderboardRemainingTime } from "./LeaderboardRemainingTime";
 import { formatter } from "@/lib/utils";
 import { getLeaderboard } from "@/actions/get-leaderboard";
 
-export const Leaderboard = () => {
+const Leaderboard = () => {
   const [data, setData] = useState(null);
 
   const fetchLeaderboard = async () => {
@@ -122,3 +125,5 @@ export const Leaderboard = () => {
     </>
   );
 };
+
+export default Leaderboard;
