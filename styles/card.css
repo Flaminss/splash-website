@@ -41,7 +41,6 @@
 }
 
 .card {
-  background-image: url("/images/card-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -50,6 +49,24 @@
   text-align: center;
   margin-bottom: -15rem;
   max-width: 35rem;
+}
+
+.card-packdraw,
+.card-csgo-roll,
+.card-clash {
+  background-image: url("/images/card-bg.png");
+}
+
+.card-packdraw {
+  background-size: 200%; /* 100% bigger */
+}
+
+.card-csgo-roll {
+  background-size: 200%; /* 100% bigger */
+}
+
+.card-clash {
+  background-size: 250%; /* 150% bigger */
 }
 
 .card .title {
@@ -63,11 +80,21 @@
 }
 
 .card .title img.title__img {
-  max-width: 50%; /* Make images 50% smaller */
-  height: auto;
   display: block;
   margin: 0 auto;
   animation: float 3s ease-in-out infinite; /* Apply the float animation */
+}
+
+.title-packdraw img.title__img {
+  max-width: 150%; /* 50% bigger */
+}
+
+.title-csgo-roll img.title__img {
+  max-width: 150%; /* 50% bigger */
+}
+
+.title-clash img.title__img {
+  max-width: 175%; /* 75% bigger */
 }
 
 .card .rewards {

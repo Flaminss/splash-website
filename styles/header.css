@@ -43,14 +43,13 @@
   color: #fff;
   font-size: 1.6rem;
   font-weight: bold;
-  transition: background 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .mainmenu li a:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
-  color: #ffffff; /* Text color on hover */
-  padding: 0.5rem 1rem; /* Optional padding for hover effect */
-  border-radius: 5px; /* Optional border radius for hover effect */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
@@ -63,7 +62,7 @@
   display: inline-block;
   padding: 0.8rem 4rem;
   border-radius: 0.9rem;
-  transition: background 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .btn__primary {
@@ -76,7 +75,9 @@
 }
 
 .btn__primary:hover {
-  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Text Color */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
@@ -110,14 +111,13 @@
 .mobile__menu .mobilemenu__list a {
   color: #fff;
   font-size: 2rem;
-  transition: background 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .mobile__menu .mobilemenu__list a:hover {
-  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
-  color: #ffffff; /* Text color on hover */
-  padding: 0.5rem 1rem; /* Optional padding for hover effect */
-  border-radius: 5px; /* Optional border radius for hover effect */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
