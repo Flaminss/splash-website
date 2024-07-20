@@ -9,10 +9,10 @@ export default function Hero({ content, img }) {
         {content && (
           <div className="hero__content">
             <div className="hero__btn">
-              <a href="#" className="btn btn__primary">
+              <a href="https://splashrewards.net/bonuses" className="btn btn__primary">
                 Bonuses
               </a>
-              <a href="#" className="btn btn__primary">
+              <a href="https://splashrewards.net/leaderboard" className="btn btn__primary">
                 Leaderboard
               </a>
             </div>
