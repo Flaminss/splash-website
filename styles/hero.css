@@ -26,7 +26,21 @@
 .hero__btn a {
   padding: 1rem 3rem; /* Increased padding for bigger buttons */
   font-size: 1.5rem; /* Increased font size for bigger buttons */
+  background-color: #0056b3; /* Initial background color */
+  color: #fff; /* Initial text color */
+  border: 2px solid #1973c9; /* Initial border color */
+  border-radius: 5px; /* Button border radius */
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
+
+/* Hover styles for buttons */
+.hero__btn a:hover {
+  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
+  color: #ffeb3b; /* Text color on hover */
+}
+
 .hero__play--btn {
   margin-top: 4rem;
   display: flex;
