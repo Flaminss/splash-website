@@ -47,7 +47,7 @@
 }
 
 .mainmenu li a:hover {
-  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
@@ -75,7 +75,7 @@
 }
 
 .btn__primary:hover {
-  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background on hover */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
@@ -115,7 +115,7 @@
 }
 
 .mobile__menu .mobilemenu__list a:hover {
-  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color */
+  background: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient background */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateY(-3px); /* Slight lift on hover */
