@@ -58,17 +58,17 @@
   background-size: contain;
   background-position: center;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 4rem;
   width: 100%;
   height: 15rem; /* Fixed height for consistency */
 }
 
 .card .title img.title__img {
-  max-width: 100%; /* Make the image fill the container */
+  max-width: 50%; /* Make the image fill the container */
   height: auto;
-  display: block;
-  margin: 0 auto;
   animation: float 3s ease-in-out infinite; /* Apply the float animation */
 }
 

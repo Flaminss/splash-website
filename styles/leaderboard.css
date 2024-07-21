@@ -1,38 +1,34 @@
 .leaderboard__area {
-  padding: 4rem 0;
-}
-
-.leaderboard {
+  padding: 3rem 0;
   text-align: center;
 }
-
-.leaderboard img {
+.leaderboard .container > img {
   width: 100%;
-  height: auto;
 }
-
+.leaderboard .container {
+  position: relative;
+}
 .leaderboard__btn {
-  margin-top: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem; /* Adjusted to move the button up */
 }
-
-.btn__round {
-  display: inline-block;
-  padding: 1rem 3rem; /* Adjusted padding for larger button size */
-  font-size: 2rem; /* Adjusted font size for larger text */
-  font-weight: bold;
-  text-transform: uppercase;
+.leaderboard__btn .btn__round {
+  font-size: 3.2rem;
+  font-weight: 800;
+  padding: 1.5rem 3rem; /* Adjusted for larger size */
+  border-radius: 0.5rem; /* Adjusted for consistency */
+  background-image: url("/images/btn__bg.png"); /* Added background */
+  background-size: cover; /* Cover the entire button */
+  background-repeat: no-repeat; /* No repeat */
   color: #fff;
-  background: var(--color-dark-secondary);
-  background-image: url("/images/btn__bg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
-.btn__round:hover {
+/* Hover effect for the button */
+.leaderboard__btn .btn__round:hover {
   color: #fe4d01; /* Gradient text color on hover */
-  transform: translateY(-3px); /* Slight lift on hover */
 }

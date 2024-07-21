@@ -9,7 +9,7 @@ export default function Leaderboard() {
           <img src="/images/leaderboard.png" alt="" />
           <div className="leaderboard__btn">
             <Link href="/leaderboard" className="btn__round">
-              view leaderboards
+              View Leaderboards
             </Link>
           </div>
         </div>
