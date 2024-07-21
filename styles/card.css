@@ -58,7 +58,9 @@
   background-size: contain;
   background-position: center;
   text-align: center;
-  display: inline-block;
+  display: flex; /* Change to flex for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
   margin-top: 4rem;
   width: 100%; /* Ensure all titles have the same width */
   height: 100px; /* Set a fixed height for all titles */
@@ -66,16 +68,15 @@
 
 .card .title img.title__img {
   display: block;
-  margin: 0 auto;
   animation: float 3s ease-in-out infinite; /* Apply the float animation */
 }
 
 .title-packdraw img.title__img {
-  max-width: 50%; /* 50% smaller */
+  max-width: 75%; /* 50% bigger */
 }
 
 .title-csgo-roll img.title__img {
-  max-width: 50%; /* 50% smaller */
+  max-width: 130%; /* 30% bigger */
 }
 
 .title-clash img.title__img {
