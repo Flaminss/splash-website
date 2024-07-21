@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import PastWinnersModal from "./PastWinnersModal";
 import WinnersCard from "./WinnersCard";
+import "../../styles/past-winners.css"; // Ensure this file includes the CSS above
 
 export const PastWinnersList = () => {
   const [showWinnersModal, setShowWinnersModal] = useState(false);

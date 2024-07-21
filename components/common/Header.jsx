@@ -40,8 +40,8 @@ export default function Header() {
               </ul>
             </div>
             <div className="header__right">
-              <a href="#" className="btn btn__primary">
-                Register
+              <a href="https://discord.gg/WRghHGffy7" className="btn btn__primary">
+                Discord
               </a>
 
               <FaBars className="menubar" onClick={handleMenu} />
