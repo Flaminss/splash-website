@@ -65,7 +65,7 @@
 }
 
 .card .title img.title__img {
-  max-width: 50%;
+  max-width: 100%; /* Make the image fill the container */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -73,11 +73,15 @@
 }
 
 .card .title img.csgo-roll {
-  max-width: 35%; /* Adjusted size */
+  max-width: 70%; /* Adjusted size */
 }
 
 .card .title img.packdraw {
-  max-width: 50%; /* Adjusted size */
+  max-width: 100%; /* Adjusted size */
+}
+
+.card .title img.clash {
+  max-width: 150%; /* Adjusted size */
 }
 
 .card .rewards {

@@ -17,8 +17,8 @@
 
 .btn__round {
   display: inline-block;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
+  padding: 1rem 3rem; /* Adjusted padding for larger button size */
+  font-size: 2rem; /* Adjusted font size for larger text */
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -33,6 +33,6 @@
 }
 
 .btn__round:hover {
-  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color on hover */
+  color: #fe4d01; /* Gradient text color on hover */
   transform: translateY(-3px); /* Slight lift on hover */
 }

@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { LeaderboardRemainingTime } from "./LeaderboardRemainingTime";
 import { formatter } from "@/lib/utils";
 import { getLeaderboard } from "@/actions/get-leaderboard";
+import "../../styles/leaderboard.css";
 
 const Leaderboard = () => {
   const [data, setData] = useState(null);
@@ -131,6 +133,19 @@ const Leaderboard = () => {
         </div>
       </div>
       {/* Leaderboard List End */}
+
+      <div className="leaderboard__area">
+        <div className="leaderboard">
+          <div className="container">
+            <img src="/images/leaderboard.png" alt="" />
+            <div className="leaderboard__btn">
+              <Link href="/leaderboard" className="btn__round">
+                view leaderboards
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
