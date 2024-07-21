@@ -1,13 +1,16 @@
 .giveway__area {
   margin: 3rem 0;
 }
+
 .giveway {
   text-align: center;
   position: relative;
 }
+
 .giveway > img {
   width: 100%;
 }
+
 .giveway__content {
   position: absolute;
   left: 50%;
@@ -15,18 +18,21 @@
   width: 100%;
   transform: translateX(-50%);
 }
+
 .total__amount {
   font-size: 3.2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
 }
+
 /* giveway */
 .giveway__amount {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .giveway__amount--inner {
   display: flex;
   align-items: center;
@@ -43,6 +49,7 @@
   border: 2px solid rgba(0, 0, 0, 0.8);
   border-bottom: 4px solid rgba(0, 0, 0, 0.8);
 }
+
 .giveway__amount--inner p.num {
   font-size: 6rem;
   font-weight: 900;
@@ -50,15 +57,19 @@
   padding: 0.2rem 2.5rem;
   -webkit-text-stroke: 4px #054a8a;
 }
+
 .giveway__amount--inner p.num:first-child {
   border-radius: 1rem;
 }
+
 .giveway__amount--inner p.num:first-child {
   border-radius: 1rem 0 0 3rem;
 }
+
 .giveway__amount--inner p.num:last-child {
   border-radius: 0 1rem 3rem 0;
 }
+
 span.comma.num {
   font-size: 6rem;
 }
@@ -75,7 +86,14 @@ span.comma.num {
   text-transform: uppercase;
   text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
   padding: 3rem;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
+
+.btn__round:hover {
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
 .giveway .btn__round {
   margin-top: 0;
 }
@@ -91,6 +109,7 @@ span.comma.num {
     font-size: 4rem;
   }
 }
+
 @media screen and (max-width: 1050px) {
   .giveway__amount--inner p.num {
     font-size: 3rem;
@@ -102,6 +121,7 @@ span.comma.num {
     font-size: 3rem;
   }
 }
+
 @media screen and (max-width: 960px) {
   .giveway__amount--inner p.num {
     font-size: 2.5rem;
@@ -118,6 +138,7 @@ span.comma.num {
     padding: 1rem 1.5rem;
   }
 }
+
 @media screen and (max-width: 810px) {
   .giveway__amount--inner p.num {
     font-size: 1.8rem;
@@ -135,6 +156,7 @@ span.comma.num {
     padding: 0.5rem 1.2rem;
   }
 }
+
 @media screen and (max-width: 666px) {
   .giveway__amount--inner p.num {
     font-size: 1.5rem;
@@ -151,6 +173,7 @@ span.comma.num {
     gap: 0.3rem;
     padding: 0.5rem 1rem;
   }
+
   .total__amount {
     font-size: 2.5rem;
   }

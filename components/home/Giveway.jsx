@@ -21,7 +21,6 @@ export default function Giveway() {
                 <p className="num"></p>
                 <p className="num"></p>
               </div>
-             
             </div>
             <a href="#" className="btn__round">
               how to compete?

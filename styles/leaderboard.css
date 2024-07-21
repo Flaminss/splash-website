@@ -1,37 +1,36 @@
 .leaderboard__area {
-  padding: 3rem 0;
-  text-align: center;
-}
-.leaderboard .container > img {
-  width: 100%;
-}
-.leaderboard .container {
-  position: relative;
-}
-.leaderboard__btn {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 1rem;
-}
-.leaderboard__btn .btn__round {
-  font-size: 3.2rem;
-  font-weight: 800;
+  padding: 4rem 0;
 }
 
-/* responsive */
-@media screen and (max-width: 910px) {
-  .leaderboard__btn .btn__round {
-    font-size: 2.5rem;
-  }
+.leaderboard {
+  text-align: center;
 }
-@media screen and (max-width: 740px) {
-  .leaderboard__btn .btn__round {
-    font-size: 2rem;
-  }
+
+.leaderboard img {
+  width: 100%;
+  height: auto;
 }
-@media screen and (max-width: 615px) {
-  .leaderboard__btn .btn__round {
-    font-size: 1.5rem;
-  }
+
+.leaderboard__btn {
+  margin-top: 2rem;
+}
+
+.btn__round {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--color-dark-secondary);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: color 0.3s, background 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn__round:hover {
+  background: var(--color-dark-secondary); /* Keep background color */
+  background: linear-gradient(45deg, #fe4d01, #f4a77b);
+  color: #fff; /* Ensure text is still readable */
+  transform: translateY(-3px); /* Slight lift on hover */
 }
