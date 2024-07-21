@@ -54,20 +54,45 @@
 }
 
 /* Styles for Buttons */
-.btn-secondary {
+.btn {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background-color: var(--color-secondary); /* Assuming you have a secondary color defined */
+  border: 4px solid #fff;
+  display: inline-block;
   padding: 0.8rem 4rem;
   border-radius: 0.9rem;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  transition: background 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn__primary {
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-tertiary) 0%,
+    var(--color-dark-secondary) 100%
+  );
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn__primary:hover {
+  background: linear-gradient(45deg, #fe4d01, #f4a77b);
+  color: #ffffff; /* Text color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.btn-secondary {
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-tertiary) 0%,
+    var(--color-dark-secondary) 100%
+  );
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-secondary); /* Keep background color */
-  color: #fe4d01; /* Change text color to a solid color */
+  background: linear-gradient(45deg, #fe4d01, #f4a77b);
+  color: #ffffff; /* Text color on hover */
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
