@@ -1,6 +1,7 @@
 .leaderboard__area {
   padding: 3rem 0;
   text-align: center;
+  overflow: hidden; /* Added to prevent overflow and scrollbar */
 }
 .leaderboard .container > img {
   width: 100%;
@@ -12,12 +13,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -3rem; /* Adjusted to move the button up */
+  bottom: 3rem; /* Adjusted to move the button up */
 }
 .leaderboard__btn .btn__round {
   font-size: 3.2rem;
   font-weight: 800;
-  padding: 1.5rem 3rem; /* Adjusted for larger size */
+  padding: 2rem 5rem; /* Adjusted for larger size */
   border-radius: 0.5rem; /* Adjusted for consistency */
   background-image: url("/images/btn__bg.png"); /* Added background */
   background-size: cover; /* Cover the entire button */
