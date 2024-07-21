@@ -76,7 +76,7 @@
 }
 
 .title-csgo-roll img.title__img {
-  max-width: 130%; /* 30% bigger */
+  max-width: 65%; /* 35% smaller */
 }
 
 .title-clash img.title__img {
@@ -131,12 +131,12 @@
   color: #fff;
   padding: 2.5rem;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s; /* Smooth transition */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .btn__card:hover {
-  background: linear-gradient(45deg, #0056b3, #002344); /* Gradient background on hover */
-  color: #ffeb3b; /* Text color on hover */
+  color: #fe4d01; /* Text color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
 }
 
 /* Responsive  */
