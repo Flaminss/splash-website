@@ -1,4 +1,3 @@
-// components/leaderboard/Leaderboard.js
 "use client";
 
 import { useEffect, useState } from "react";
@@ -15,7 +14,7 @@ const Leaderboard = () => {
     7: "$10",
     8: "$5",
     9: "$5",
-    10: "$5"
+    10: "$5",
   };
 
   const fetchLeaderboard = async () => {
@@ -98,7 +97,6 @@ const Leaderboard = () => {
       {/* Leaderboard Card Area End */}
 
       {/* Leaderboard List Start */}
-
       <div className="leaderboard__area">
         <div className="container">
           <div className="leaderboard__inner">
@@ -122,7 +120,9 @@ const Leaderboard = () => {
                       <span>$</span>
                       {formatter.format(challenger?.wagerAmount)}
                     </p>
-                    <p className="challengers__prize">{defaultPrizes[index + 4]}</p>
+                    <p className="challengers__prize">
+                      {defaultPrizes[index + 4]}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -130,7 +130,6 @@ const Leaderboard = () => {
           </div>
         </div>
       </div>
-
       {/* Leaderboard List End */}
     </>
   );

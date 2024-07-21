@@ -14,23 +14,8 @@ export default function Bonuses() {
 
         <div className="card__area">
           <div className="cards bonuses">
-            <div className="card">
-              <div className="title title-packdraw">
-                <img src="/images/packdraw.png" alt="Packdraw" className="title__img" />
-              </div>
-              <div className="rewards">
-                <h3>Rewards</h3>
-                <p>DAILY FREE CASES</p>
-                <p>5% DEPOSIT BONUS</p>
-                <p>COMPETE IN MONTHLY RACE</p>
-              </div>
-              <p className="use__code">Use Code</p>
-              <div className="card__btn">
-                <button className="btn__card">Splash</button>
-              </div>
-            </div>
-            <div className="card">
-              <div className="title title-csgo-roll">
+            <div className="card card-top">
+              <div className="title">
                 <img src="/images/csgo-roll.png" alt="CSGO Roll" className="title__img" />
               </div>
               <div className="rewards">
@@ -41,11 +26,26 @@ export default function Bonuses() {
               </div>
               <p className="use__code">Use Code</p>
               <div className="card__btn">
-                <button className="btn__card">SplashCS</button>
+                <a href="https://csgoroll.com/r/SPLASHCS" className="btn__card">SPLASHCS</a>
               </div>
             </div>
-            <div className="card">
-              <div className="title title-clash">
+            <div className="card card-bottom">
+              <div className="title">
+                <img src="/images/packdraw.png" alt="Packdraw" className="title__img" />
+              </div>
+              <div className="rewards">
+                <h3>Rewards</h3>
+                <p>DAILY FREE CASES</p>
+                <p>5% DEPOSIT BONUS</p>
+                <p>COMPETE IN MONTHLY RACE</p>
+              </div>
+              <p className="use__code">Use Code</p>
+              <div className="card__btn">
+                <a href="https://packdraw.com?ref=Splash" className="btn__card">SPLASH</a>
+              </div>
+            </div>
+            <div className="card card-top">
+              <div className="title">
                 <img src="/images/clash.png" alt="Clash" className="title__img" />
               </div>
               <div className="rewards">
@@ -56,7 +56,7 @@ export default function Bonuses() {
               </div>
               <p className="use__code">Use Code</p>
               <div className="card__btn">
-                <button className="btn__card">SplashCS</button>
+                <a href="https://clash.gg/r/SPLASHCS" className="btn__card">SPLASHCS</a>
               </div>
             </div>
           </div>

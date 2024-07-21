@@ -58,29 +58,16 @@
   background-size: contain;
   background-position: center;
   text-align: center;
-  display: flex; /* Change to flex for centering */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  display: inline-block;
   margin-top: 4rem;
-  width: 100%; /* Ensure all titles have the same width */
-  height: 100px; /* Set a fixed height for all titles */
 }
 
 .card .title img.title__img {
+  max-width: 50%; /* Make images 50% smaller */
+  height: auto;
   display: block;
+  margin: 0 auto;
   animation: float 3s ease-in-out infinite; /* Apply the float animation */
-}
-
-.title-packdraw img.title__img {
-  max-width: 75%; /* 50% bigger */
-}
-
-.title-csgo-roll img.title__img {
-  max-width: 65%; /* 35% smaller */
-}
-
-.title-clash img.title__img {
-  max-width: 100%; /* Original size */
 }
 
 .card .rewards {
@@ -131,12 +118,11 @@
   color: #fff;
   padding: 2.5rem;
   cursor: pointer;
-  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+  transition: color 0.3s; /* Smooth transition */
 }
 
 .btn__card:hover {
-  color: #fe4d01; /* Text color on hover */
-  transform: translateY(-3px); /* Slight lift on hover */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color on hover */
 }
 
 /* Responsive  */

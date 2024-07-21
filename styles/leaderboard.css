@@ -23,14 +23,16 @@
   text-transform: uppercase;
   color: #fff;
   background: var(--color-dark-secondary);
+  background-image: url("/images/btn__bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50px;
   text-decoration: none;
-  transition: color 0.3s, background 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .btn__round:hover {
-  background: var(--color-dark-secondary); /* Keep background color */
-  background: linear-gradient(45deg, #fe4d01, #f4a77b);
-  color: #fff; /* Ensure text is still readable */
+  color: linear-gradient(45deg, #fe4d01, #f4a77b); /* Gradient text color on hover */
   transform: translateY(-3px); /* Slight lift on hover */
 }
