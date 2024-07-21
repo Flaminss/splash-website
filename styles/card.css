@@ -60,18 +60,8 @@
   text-align: center;
   display: inline-block;
   margin-top: 4rem;
-}
-
-.title-packdraw .card .title {
-  background-size: 200%; /* 100% bigger */
-}
-
-.title-csgo-roll .card .title {
-  background-size: 200%; /* 100% bigger */
-}
-
-.title-clash .card .title {
-  background-size: 250%; /* 150% bigger */
+  width: 100%; /* Ensure all titles have the same width */
+  height: 100px; /* Set a fixed height for all titles */
 }
 
 .card .title img.title__img {
@@ -81,15 +71,15 @@
 }
 
 .title-packdraw img.title__img {
-  max-width: 150%; /* 50% bigger */
+  max-width: 50%; /* 50% smaller */
 }
 
 .title-csgo-roll img.title__img {
-  max-width: 150%; /* 50% bigger */
+  max-width: 50%; /* 50% smaller */
 }
 
 .title-clash img.title__img {
-  max-width: 175%; /* 75% bigger */
+  max-width: 100%; /* Original size */
 }
 
 .card .rewards {
