@@ -1,30 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import { getRemainingDays, getTargetDate } from "@/lib/utils";
 
-export const LeaderboardRemainingTime = () => {
-  const [remainingTime, setRemainingTime] = useState(() => {
-    const targetDate = getTargetDate();
-    return getRemainingDays(targetDate);
+export const LeaderboardRemainingTime = ({ selectedLeaderboard }) => {
+  const [remainingTime, setRemainingTime] = useState({
+    day: 0,
+    hour: 0,
+    minute: 0,
+    second: 0,
   });
 
-  const updateTime = () => {
-    const targetDate = getTargetDate();
-    setRemainingTime(getRemainingDays(targetDate));
-  };
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      // console.log("Inside interval");
-      updateTime();
-    }, 300);
+    const updateTime = () => {
+      setRemainingTime(getRemainingDays(getTargetDate(selectedLeaderboard)));
+    };
+
+    updateTime(); // Initial update
+    const interval = setInterval(updateTime, 1000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [selectedLeaderboard]);
 
   return (
     <div className="leaderboard">

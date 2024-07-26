@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import "../../styles/past-winners.css"; // Ensure this file includes the CSS above
 import PastWinnersModal from "./PastWinnersModal";
 import WinnersCard from "./WinnersCard";
-import "../../styles/past-winners.css"; // Ensure this file includes the CSS above
 
 export const PastWinnersList = () => {
   const [showWinnersModal, setShowWinnersModal] = useState(false);
@@ -47,7 +47,18 @@ export const PastWinnersList = () => {
   };
 
   // Example prizes for the first 10 places
-  const prizes = ["$150", "$75", "$50", "$25", "$15", "$10", "$10", "$5", "$5", "$5"];
+  const prizes = [
+    "$150",
+    "$75",
+    "$50",
+    "$25",
+    "$15",
+    "$10",
+    "$10",
+    "$5",
+    "$5",
+    "$5",
+  ];
 
   if (loading) {
     return <div>Loading...</div>;
@@ -80,7 +91,7 @@ export const PastWinnersList = () => {
             </div>
           )}
 
-          <button className="past__winner--btn" onClick={handleModal}>
+          <button className="btn btn__primary" onClick={handleModal}>
             View All
           </button>
         </div>

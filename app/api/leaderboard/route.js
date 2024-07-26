@@ -12,9 +12,7 @@ export const POST = async (request) => {
   try {
     const body = await request.json();
 
-    // console.log(body);
-
-    const data = await getLeaderboard(body.month, body.year);
+    const data = await getLeaderboard("packdraw", body.month, body.year);
 
     return NextResponse.json({
       message: "Success",

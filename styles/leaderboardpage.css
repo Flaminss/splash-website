@@ -239,36 +239,112 @@
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
-.past__winner--btn {
-  font-size: 2rem;
+
+.btn {
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #fff;
   text-transform: uppercase;
-  margin-top: 3rem;
+  color: #fff;
+  border: 4px solid #fff;
   display: inline-block;
-  background-image: url("/images/winners__btn--bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 2rem 6rem;
-  background-color: transparent;
-  border: none;
+  padding: 0.8rem 4rem;
+  border-radius: 0.9rem;
+  transition: background 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  border: 4px solid #fff;
   cursor: pointer;
 }
 
-/* responsive  */
-@media screen and (max-width: 1124px) {
-  .leaderboard__cards {
-    flex-wrap: wrap;
-    justify-content: space-around;
+.btn__primary {
+  background: linear-gradient(
+    90deg,
+    var(--color-dark-tertiary) 0%,
+    var(--color-dark-secondary) 100%
+  );
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+/* Toggle Buttons for Leaderboards */
+.leaderboard__toggle {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative; /* Change from absolute to relative */
+  top: -5rem; /* Adjust as needed to position above the center num_bg */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the buttons */
+  gap: 2rem; /* Add gap between buttons */
+  z-index: 10; /* Ensure buttons are above the leaderboard__bg */
+}
+
+.leaderboard__toggle button {
+  background-color: #005db2; /* Same background as Discord button */
+  color: transparent; /* Remove default text color */
+  border: none;
+  padding: 4rem 12rem; /* Adjusted for double size */
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 6rem; /* Adjusted for double font size */
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  border-radius: 4rem; /* Apply rounded corners */
+  width: 40rem; /* Set a fixed width */
+  height: 16rem; /* Set a fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11; /* Ensure buttons are above the leaderboard__bg */
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
+
+.leaderboard__toggle img {
+  width: 200%; /* 200% bigger */
+  height: auto;
+}
+
+.leaderboard__toggle .packdraw img {
+  width: 85%; /* Adjusted for 15% smaller size */
+}
+
+.leaderboard__toggle .csgobig img {
+  width: 70%; /* Adjusted for 30% smaller size */
+}
+
+.leaderboard__toggle button:hover {
+  background: linear-gradient(
+    90deg,
+    #fe4d01,
+    #f4a77b
+  ); /* Gradient hover effect */
+}
+
+.leaderboard__toggle button.active {
+  filter: brightness(0.7); /* Darken the button further when active */
+}
+
+/* Ensure other responsive styles */
+@media screen and (max-width: 768px) {
+  .leaderboard__toggle {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
   }
-  .leaderboard__card.middle {
-    width: 32rem !important;
-    height: 37rem !important;
-    margin-top: 0 !important;
+
+  .leaderboard__toggle button {
+    padding: 2rem 6rem; /* Adjusted for double size in smaller screens */
+    font-size: 4rem; /* Adjusted for double font size in smaller screens */
+    width: 32rem; /* Adjusted width for smaller screens */
+    height: 12rem; /* Adjusted height for smaller screens */
   }
-  .leaderboard__card {
-    margin-bottom: 10rem;
+
+  .leaderboard__toggle img {
+    width: 200%; /* 200% bigger */
+    height: auto;
+  }
+
+  .leaderboard__toggle .packdraw img {
+    width: 85%; /* Adjusted for 15% smaller size */
+  }
+
+  .leaderboard__toggle .csgobig img {
+    width: 70%; /* Adjusted for 30% smaller size */
   }
 }

@@ -15,7 +15,7 @@ export default function Footer() {
             <img src="/images/footer__logo.png" alt="" />
           </div>
           <div className="footer__right">
-            <a href="#">Challanges</a>
+            <a href="#">Challenges</a>
             <a href="#">Social</a>
             <a href="#">Register</a>
           </div>
@@ -29,7 +29,9 @@ export default function Footer() {
 
           <div className="footer__bottom--right">
             <p>Site by</p>
-            <img src="/images/footer__bottom--logo.png" alt="" />
+            <a href="https://biggzie.net/" target="_blank" rel="noopener noreferrer">
+              <img src="/images/footer__bottom--logo.png" alt="Site by Biggzie" />
+            </a>
           </div>
         </div>
       </div>
