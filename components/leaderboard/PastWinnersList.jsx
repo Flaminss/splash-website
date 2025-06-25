@@ -1,116 +1,67 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import "../../styles/past-winners.css"; // Ensure this file includes the CSS above
-import PastWinnersModal from "./PastWinnersModal";
-import WinnersCard from "./WinnersCard";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
+import Hero from "@/components/common/Hero";
+import { Suspense, useState } from "react";
+import "../../styles/leaderboardpage.css";
 
-export const PastWinnersList = () => {
-  const [showWinnersModal, setShowWinnersModal] = useState(false);
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [month, setMonth] = useState(new Date().getUTCMonth() - 1);
-  const [year, setYear] = useState(new Date().getUTCFullYear());
+import Leaderboard from "@/components/leaderboard/Leaderboard";
+import { PastWinnersList } from "@/components/leaderboard/PastWinnersList";
 
-  const getPastWinnersList = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch("/api/leaderboard", {
-        method: "POST",
-        body: JSON.stringify({
-          month: month + 1,
-          year,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data && data?.data && data?.data?.leaderboard) {
-        setData(data?.data?.leaderboard);
-      }
-
-      // console.log(data);
-    } catch (error) {
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    // console.log("effect");
-    getPastWinnersList();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [month]);
-
-  const handleModal = () => {
-    setShowWinnersModal(!showWinnersModal);
-  };
-
-  // Example prizes for the first 10 places
-  const prizes = [
-    "$150",
-    "$75",
-    "$50",
-    "$25",
-    "$15",
-    "$10",
-    "$10",
-    "$5",
-    "$5",
-    "$5",
-  ];
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  // console.log("Updating...");
+export default function Page() {
+  const [selectedLeaderboard, setSelectedLeaderboard] = useState("packdraw");
 
   return (
     <>
-      <div className="past__winners">
-        <div className="container">
-          <h3 className="winners__title">PAST WINNERS</h3>
-          {data?.length >= 3 && (
-            <div className="past__winner">
-              <WinnersCard
-                img="/images/past-winner-1.png"
-                wagerAmount={data[0].wagerAmount}
-                username={data[0].username}
-              />
-              <WinnersCard
-                img="/images/past-winner-1.png"
-                wagerAmount={data[1].wagerAmount}
-                username={data[1].username}
-              />
-              <WinnersCard
-                img="/images/past-winner-1.png"
-                wagerAmount={data[2].wagerAmount}
-                username={data[2].username}
-              />
-            </div>
-          )}
+      <Header />
+      <Hero content={false} img="/images/leaderboard__bg.png" />
 
-          <button className="btn btn__primary" onClick={handleModal}>
-            View All
-          </button>
-        </div>
+      <div className="leaderboard__toggle">
+        <button
+          className={selectedLeaderboard === "packdraw" ? "active" : ""}
+          onClick={() => setSelectedLeaderboard("packdraw")}
+        >
+          <img
+            src="/images/packdraw.png"
+            alt="Packdraw"
+            className="leaderboard__toggle-image packdraw"
+          />
+        </button>
+
+        <button
+          className={selectedLeaderboard === "csgobig" ? "active" : ""}
+          onClick={() => setSelectedLeaderboard("csgobig")}
+        >
+          <img
+            src="/images/csgobig.png"
+            alt="CSGOBig"
+            className="leaderboard__toggle-image csgobig"
+          />
+        </button>
+
+        <button
+          className={selectedLeaderboard === "casinoAffiliate" ? "active" : ""}
+          onClick={() => setSelectedLeaderboard("casinoAffiliate")}
+        >
+          <img
+            src="/images/casino.png"
+            alt="Casino Affiliate"
+            className="leaderboard__toggle-image casino"
+          />
+        </button>
       </div>
 
-      {showWinnersModal && (
-        <PastWinnersModal
-          showWinnersModal={showWinnersModal}
-          setShowWinnersModal={setShowWinnersModal}
-          data={data.slice(0, 10)}
-          month={month}
-          year={year}
-          setMonth={setMonth}
-          setYear={setYear}
-          loading={loading}
-          setLoading={setLoading}
-          prizes={prizes} // Pass the prizes array
-        />
-      )}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Leaderboard selectedLeaderboard={selectedLeaderboard} />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <PastWinnersList />
+      </Suspense>
+
+      <Footer />
     </>
   );
-};
+}
+
